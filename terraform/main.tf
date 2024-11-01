@@ -78,10 +78,6 @@ resource "aws_route_table_association" "private_route_association" {
   }
 }
 
-
-
-
-
 # Define the Security Group for RDS PostgreSQL
 data "aws_security_group" "RDS-sg" {
   id = "sg-0993e0995433ee590"  # Existing RDS Security Group ID
@@ -123,7 +119,6 @@ data "aws_security_group" "redis_sg" {
 data "aws_elasticache_replication_group" "existing_redis" {
   replication_group_id = "rs-redis"
 }
-
 
 # Define the Security Group for the EKS Cluster
 resource "aws_security_group" "eks_cluster_sg" {
@@ -248,6 +243,7 @@ module "eks" {
   }
 }
 
+# outputs
 output "vpc_id" {
   value = data.aws_vpc.existing_vpc.id
 }
