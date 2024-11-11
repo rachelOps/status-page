@@ -1,1 +1,0 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"caching","Source":"./modules/caching","Dir":"modules/caching"},{"Key":"compute","Source":"./modules/compute","Dir":"modules/compute"},{"Key":"iam_roles","Source":"./modules/iam_roles","Dir":"modules/iam_roles"},{"Key":"networking","Source":"./modules/networking","Dir":"modules/networking"}]}
